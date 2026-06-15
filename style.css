@@ -1,0 +1,206 @@
+/* Reset e Configurações de Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    /* Fundo estritamente branco */
+    color: #1e293b;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barra de Topo */
+.top-bar {
+    width: 100%;
+    background-color: #0f172a;
+    color: #f8fafc;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Container Principal */
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+/* Cabeçalho Editorial */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Exibição da Bandeira com Imagem */
+.visual-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.bandeira-canvas {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandeira-imagem {
+    width: 320px;
+    /* Tamanho proporcional e limpo */
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Sombra elegante na imagem */
+}
+
+/* Grid Editorial de Significados */
+.grid-significados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card-significado {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-significado:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Indicadores de Cores Minimalistas */
+.card-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.verde-bg {
+    background-color: #009c3b;
+}
+
+.amarelo-bg {
+    background-color: #ffdf00;
+}
+
+.azul-bg {
+    background-color: #002776;
+}
+
+.branco-bg {
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+}
+
+/* Bordas temáticas sutis nos cards */
+.verde-border {
+    border-top: 4px solid #009c3b;
+}
+
+.amarelo-border {
+    border-top: 4px solid #ffdf00;
+}
+
+.azul-border {
+    border-top: 4px solid #002776;
+}
+
+.branco-border {
+    border-top: 4px solid #cbd5e1;
+}
+
+.card-significado h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.card-significado p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+.page-footer {
+    margin-top: auto;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #f1f5f9;
+    background-color: #ffffff;
+}
+
+.page-footer p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .main-container {
+        padding: 40px 20px;
+    }
+
+    .bandeira-imagem {
+        width: 100%;
+        max-width: 280px;
+    }
+}
